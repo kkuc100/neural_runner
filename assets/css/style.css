@@ -2315,3 +2315,30 @@ section {
 #footer .credits a {
   color: #a2cce3;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+  gap: 20px; /* Adjust the gap between grid items */
+  padding: 20px; /* Add padding around the grid */
+}
+
+/* Style each grid item */
+.grid-item {
+  overflow: hidden; /* Ensure images do not overflow their container */
+  border: 1px solid #ccc; /* Optional: Add borders or box-shadow for visual separation */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block; /* Ensure images are displayed as block elements */
+  border-radius: 8px 8px 0 0; /* Optional: Rounded corners on top */
+}
+
+.image-description {
+  padding: 10px;
+  background-color: #f2f2f2; /* Optional: Background color for image description */
+  border-top: 1px solid #ccc; /* Optional: Border above description */
+}
